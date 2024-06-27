@@ -63,11 +63,9 @@ cat("Validation ROC-AUC:", auc(val_roc_auc), "\n")
 cat("Test ROC-AUC:", auc(test_roc_auc), "\n")
 
 # Plot ROC curves
-plot(train_roc_auc, col = "blue", main = "ROC Curve")
-plot(val_roc_auc, col = "green", add = TRUE)
 plot(test_roc_auc, col = "red", add = TRUE)
 
-legend("bottomright", legend = c("Train", "Validation", "Test"), col = c("blue", "green", "red"), lwd = 2)
+legend("bottomright", legend = c("Multimodal ROC"), col = c("orange"), lwd = 2)
 
 # Performance metrics
 train_metrics <- data.frame(
