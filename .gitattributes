@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Treat R scripts as text
+*.R text
+*.r text
+
+# Prevent large files from being merged automatically
+*.RData -merge
+*.rds -merge
